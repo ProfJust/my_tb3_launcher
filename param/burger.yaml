@@ -18,15 +18,12 @@ tb3_0:
         # ref) http://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#profile-acceleration
         profile_acceleration: 0.0
 
-      sensors:
-        bumper_1: false
-        bumper_2: false
-
-        illumination: false
-
-        ir: false
-
-        sonar: false
+     sensors:
+      bumper_1: 0
+      bumper_2: 0
+      illumination: 0
+      ir: 0
+      sonar: 0
 
 tb3_0:
   diff_drive_controller:
