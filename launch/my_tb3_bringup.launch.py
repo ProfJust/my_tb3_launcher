@@ -82,7 +82,9 @@ def generate_launch_description():
 
         IncludeLaunchDescription(
             # PythonLaunchDescriptionSource([lidar_pkg_dir, LDS_LAUNCH_FILE]), so funkt es, aber nur als /scan
-            PythonLaunchDescriptionSource([ThisLaunchFileDir(), '/hlds_laser.launch.py']), # <--- CHANGE THIS
+            # beim LDS-02  => ld08_driver
+            # PythonLaunchDescriptionSource([ThisLaunchFileDir(), '/hlds_laser.launch.py']), # <--- CHANGE THIS
+            PythonLaunchDescriptionSource([ThisLaunchFileDir(), '/ld08.launch.py']), # <--- CHANGE THIS
             launch_arguments={'port': '/dev/ttyUSB0', 'frame_id': 'base_scan'}.items(),
         ),
 
