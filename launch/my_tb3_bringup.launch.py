@@ -74,7 +74,7 @@ def generate_launch_description():
         Node(
             package='turtlebot3_node',
             node_executable='turtlebot3_ros',
-            node_namespace='tb3_0',  # <------------------- ADD THIS!
+            namespace='tb3_0',  # <------------------- ADD THIS!
             parameters=[tb3_param_dir],
             arguments=['-i', usb_port],
             output='screen'),

@@ -47,7 +47,7 @@ def generate_launch_description():
             package='hls_lfcd_lds_driver',
             executable='hlds_laser_publisher',
             name='hlds_laser_publisher',
-            node_namespace='tb3_0',  # <------------------- ADD THIS!
+            namespace='tb3_0',  # <------------------- ADD THIS!
             parameters=[{'port': port, 'frame_id': frame_id}],
             output='screen'),
     ])
