@@ -14,8 +14,8 @@ tb3_0:
       motors:
         profile_acceleration_constant: 214.577
 
-      # [rev/min2]
-      # ref) http://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#profile-acceleration
+        # [rev/min2]
+        # ref) http://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#profile-acceleration
         profile_acceleration: 0.0
 
       sensors:
@@ -34,4 +34,3 @@ tb3_0:
         use_imu: true
         frame_id: "odom"
         child_frame_id: "base_footprint"
-        
