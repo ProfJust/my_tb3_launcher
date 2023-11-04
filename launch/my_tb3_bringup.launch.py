@@ -38,7 +38,7 @@ def generate_launch_description():
     tb3_param_dir = LaunchConfiguration(
         'tb3_param_dir',
         default=os.path.join(
-            get_package_share_directory('turtlebot3_bringup'),
+            get_package_share_directory('my_tb3_launcher'),  # <--- CHANGE THIS!
             'param',
             TURTLEBOT3_MODEL + '.yaml'))
 
